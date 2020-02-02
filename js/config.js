@@ -1,7 +1,7 @@
 let Config = {};
 
 Config.clientSettings = {
-  "client_id": "8203e7c6-ce9c-415f-84fa-81c1ad8c85c7",
+  "client_id": "5eb379de-ec30-43e1-9c23-43552fcf225f",
   "scope"    : "patient/*.* openid profile"
 }
 
@@ -10,62 +10,9 @@ Config.submitEndpoint = "/Measure/measure-mrp/$submit-data";
 Config.payerEndpoints = [{
     "name": "HSPC Payer Demo (Secure)",
     "type": "secure-smart",
-    "url": "https://api.logicahealth.org/DaVinciMRPPayer/data",
-    "clientID": "09bce41f-ebb6-4b00-93ae-464a1625bf31",
+    "url": "https://api.logicahealth.org/MedRecSandboxDemo/data",
+    "clientID": "5eb379de-ec30-43e1-9c23-43552fcf225f",
     "scope": "user/*.write" // offline_access
-  },{
-    "name": "HSPC Payer Demo (Open)",
-    "type": "open",
-    "url": "https://api.logicahealth.org/DaVinciMRPPayer/open"
-  },{
-    "name": "DBCG (Open)",
-    "type": "open",
-    "url": "http://measure.eval.kanvix.com/cqf-ruler/baseDstu3"
-  },{
-    "name": "BCBS Alabama (Secure)",
-    "type": "secure-generic",
-    "url": "https://api2.bcbsal.org/fhir/stu3",
-    "accessToken": "SECRETHERE"
-  },{
-    "name": "CareEvolution (Secure)",
-    "type": "secure-smart",
-    "url": "https://b3-fhirmeasuresendpoints-3629-consumers-sprint-s.b3-deploys.com/FhirMeasuresEndPoints.Adapter1.WebClient/api/fhir",
-    "clientID": "HSPC",
-    "scope": "user/*.read"
-  },{
-    "name": "TS Proxy - CareEvolution (Secure)",
-    "type": "secure-smart",
-    "url": "https://touchstone.aegis.net:57827/FhirMeasuresEndPoints.Adapter1.WebClient/api/fhir",
-    "clientID": "HSPC",
-    "scope": "user/*.read"
-  },{
-    "name": "Humana (Open)",
-    "type": "open",
-    "url": "https://deqm-dot-hum-hcs-rapid-fhir-sbx.appspot.com/baseSTU3"
-  },{
-    "name": "TS Proxy - Humana (Open)",
-    "type": "open",
-    "url": "https://touchstone.aegis.net:54868/baseSTU3"
-  },{
-    "name": "IBC (Open)",
-    "type": "open",
-    "url": "https://TBD"
-  },{
-    "name": "Edifecs - GuideWell Demo (Open)",
-    "type": "open",
-    "url": "https://fhir.collablynk.com"
-  },{
-    "name": "TS Proxy - Edifecs - GuideWell Demo (Open)",
-    "type": "open",
-    "url": "https://touchstone.aegis.net:59200"
-  },{
-    "name": "UnitedHealthcare (Open)",
-    "type": "open",
-    "url": "https://fhirreststaging.azurewebsites.net/fhir"
-  },{
-    "name": "TS Proxy - UnitedHealthcare (Open)",
-    "type": "open",
-    "url": "https://touchstone.aegis.net:57798/fhir"
   }
 ]
 
