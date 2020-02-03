@@ -1,7 +1,7 @@
 let Config = {};
 
 Config.clientSettings = {
-  "client_id": "5eb379de-ec30-43e1-9c23-43552fcf225f",
+  "client_id": "97151530-f9ce-4127-887d-31375c0fa784",
   "scope"    : "patient/*.* openid profile"
 }
 
@@ -10,8 +10,8 @@ Config.submitEndpoint = "/Measure/measure-mrp/$submit-data";
 Config.payerEndpoints = [{
     "name": "HSPC Payer Demo (Secure)",
     "type": "secure-smart",
-    "url": "https://api.logicahealth.org/MedRecSandboxDemo/data",
-    "clientID": "5eb379de-ec30-43e1-9c23-43552fcf225f",
+    "url": "https://api.logicahealth.org/MedRecDemo/data",
+    "clientID": "97151530-f9ce-4127-887d-31375c0fa784",
     "scope": "user/*.write" // offline_access
   }
 ]
